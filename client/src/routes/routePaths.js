@@ -1,0 +1,40 @@
+export const ROUTE_PATHS = {
+  // Storefront — public
+  HOME: '/',
+  SHOP: '/shop',
+  PRODUCT_DETAIL: '/product/:slug',
+  CART: '/cart',
+  CUSTOM_ORDER: '/custom-order',
+  ABOUT: '/about',
+  CONTACT: '/contact',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  UNAUTHORIZED: '/unauthorized',
+
+  // Storefront — protected (customer)
+  CHECKOUT: '/checkout',
+  ORDER_CONFIRMATION: '/order-confirmation/:orderId',
+  PROFILE: '/profile',
+  MY_ORDERS: '/my-orders',
+  MY_CUSTOM_REQUESTS: '/my-custom-requests',
+  WISHLIST: '/wishlist',
+  ADDRESSES: '/addresses',
+
+  // Admin — protected (admin only)
+  ADMIN_DASHBOARD: '/admin/dashboard',
+  ADMIN_PRODUCTS: '/admin/products',
+  ADMIN_PRODUCT_EDIT: '/admin/products/:productId/edit',
+  ADMIN_BULK_UPLOAD: '/admin/products/bulk-upload',
+  ADMIN_ORDERS: '/admin/orders',
+  ADMIN_CUSTOM_ORDERS: '/admin/custom-orders',
+  ADMIN_GIFT_WRAPS: '/admin/gift-wraps',
+  ADMIN_CATEGORIES: '/admin/categories',
+  ADMIN_FLASH_SALES: '/admin/flash-sales',
+  ADMIN_COUPONS: '/admin/coupons',
+  ADMIN_CUSTOMERS: '/admin/customers',
+  ADMIN_REVIEWS: '/admin/reviews',
+  ADMIN_QANDA: '/admin/qanda',
+  ADMIN_HOMEPAGE_CMS: '/admin/homepage-cms',
+  ADMIN_MARKETING: '/admin/marketing',
+  ADMIN_SETTINGS: '/admin/settings',
+}
