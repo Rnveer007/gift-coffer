@@ -1,8 +1,11 @@
+import { BrowserRouter } from 'react-router-dom'
+import AppRouter from './routes/AppRouter'
+
 function App() {
   return (
-    <div className="min-h-screen bg-neutral-ivory">
-      {/* Routing and layout will be wired here in upcoming steps */}
-    </div>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   )
 }
 

@@ -1,12 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
-import { ROUTE_PATHS } from './routePaths'
 import ProtectedRoute from '../components/common/ProtectedRoute'
 
 function AdminRoutes() {
   return (
     <Routes>
       <Route
-        path={ROUTE_PATHS.ADMIN_DASHBOARD}
+        path="dashboard"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Dashboard Page</div>
@@ -14,7 +13,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_PRODUCTS}
+        path="products"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Products Page</div>
@@ -22,7 +21,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_PRODUCT_EDIT}
+        path="products/:productId/edit"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Product Edit Page</div>
@@ -30,7 +29,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_BULK_UPLOAD}
+        path="products/bulk-upload"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Bulk Upload Page</div>
@@ -38,7 +37,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_ORDERS}
+        path="orders"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Orders Page</div>
@@ -46,7 +45,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_CUSTOM_ORDERS}
+        path="custom-orders"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Custom Orders Page</div>
@@ -54,7 +53,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_GIFT_WRAPS}
+        path="gift-wraps"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Gift Wraps Page</div>
@@ -62,7 +61,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_CATEGORIES}
+        path="categories"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Categories Page</div>
@@ -70,7 +69,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_FLASH_SALES}
+        path="flash-sales"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Flash Sales Page</div>
@@ -78,7 +77,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_COUPONS}
+        path="coupons"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Coupons Page</div>
@@ -86,7 +85,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_CUSTOMERS}
+        path="customers"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Customers Page</div>
@@ -94,7 +93,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_REVIEWS}
+        path="reviews"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Reviews Page</div>
@@ -102,7 +101,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_QANDA}
+        path="qanda"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Q&A Page</div>
@@ -110,7 +109,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_HOMEPAGE_CMS}
+        path="homepage-cms"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Homepage CMS Page</div>
@@ -118,7 +117,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_MARKETING}
+        path="marketing"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Marketing Page</div>
@@ -126,7 +125,7 @@ function AdminRoutes() {
         }
       />
       <Route
-        path={ROUTE_PATHS.ADMIN_SETTINGS}
+        path="settings"
         element={
           <ProtectedRoute requiredRole="admin">
             <div>Admin Settings Page</div>
